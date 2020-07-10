@@ -1,0 +1,27 @@
+.contact-section {
+  height: 80vh;
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contact-link {
+      margin: 0 2em;
+      .icon {
+        // height: 2rem;
+        // width: 2rem;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  border: 1px solid black;
+  padding: 1em 5em;
+  bottom: 0;
+}

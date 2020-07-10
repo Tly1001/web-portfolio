@@ -1,0 +1,23 @@
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+
+  .about-container {
+    height: fit-content;
+    margin: auto;
+
+    .interest {
+      border: 2px solid black;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 1.5em;
+
+    }
+  }
+}
+
+.about-text {
+  line-height: 2em;
+}
