@@ -6,8 +6,8 @@ AOS.init()
 function Skills() {
 
   return (
-    <section id="skills" className="section">
-      <div className="container" data-aos="fade-up" >
+    <section id="skills" className="section" style={{ opacity: 0.8 }}>
+      <div className="container skills-wrap" data-aos="fade-up">
         <h3>Front-end</h3>
 
         <ul className="skills" >
@@ -40,7 +40,7 @@ function Skills() {
         </ul>
       </div>
 
-      <div className="container" data-aos="fade-up">
+      <div className="container skills-wrap" data-aos="fade-up">
         <h3>Back-end</h3>
         
         <ul className="skills">
@@ -78,7 +78,7 @@ function Skills() {
         </ul>
       </div>
 
-      <div className="container" data-aos="fade-up">
+      <div className="container skills-wrap" data-aos="fade-up">
         <h3>Developer & Design Tools</h3>
 
         <ul className="skills">

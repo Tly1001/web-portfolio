@@ -1,5 +1,16 @@
 .contact-section {
   height: 80vh;
+  position: relative;
+
+  h1{
+    position: absolute;
+    top: -3em;
+    font-size: 32px;
+  }
+
+  h2 {
+    margin: 1em 0;
+  }
 
   .contact-links {
     display: flex;
@@ -20,8 +31,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10vh;
-  border: 1px solid black;
-  padding: 1em 5em;
+  height: 5vh;
+  background-color: rgb(22, 21, 21);
+  padding: 1em 2em;
+  margin-bottom: 2em;;
   bottom: 0;
+  border-radius: 40px;
 }

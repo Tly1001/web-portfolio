@@ -1,0 +1,109 @@
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .home-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .home-name {
+      // color: #f1e9da;
+      color: #FFC145;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 8em;
+      letter-spacing: 4px;
+      margin: 0;
+    }
+
+    // .home-text {
+    //   position: relative;
+    //   font-family: 'Montserrat', sans-serif;
+    //   text-transform: uppercase;
+    //   font-size: 2em;
+    //   letter-spacing: 4px;
+    //   overflow: hidden;
+    //   background: linear-gradient(90deg, #000, #fff, #000);
+    //   background-repeat: no-repeat;
+    //   background-size: 80%;
+    //   animation: animate 3s linear 2;
+    //   -webkit-background-clip: text;
+    //   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    // }
+  }
+}
+
+.wordCarousel {
+  font-size: 3rem;
+  font-weight: 100;
+  color: #f1e9da;
+  margin-left: auto;
+  div {
+      overflow: hidden;
+      position: relative;
+      float: right;
+      height: 65px;
+      padding-top: 10px;
+      margin-top: -3rem;
+      li {
+          font-family: 'Montserrat', sans-serif;
+          text-align: right;
+          color: #ccc;
+          font-weight: 700;
+          padding: 0 10px;
+          height: 45px;
+          margin-bottom: 45px;
+          display: block;
+      }
+  }
+}
+
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 7s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip2 {
+  0% { margin-top: -180px; }
+  5% { margin-top: -90px;  }
+  50% { margin-top: -90px; }
+  55% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
+}
+
+@keyframes flip3 {
+  0% { margin-top: -270px; }
+  5% { margin-top: -180px; }
+  33% { margin-top: -180px; }
+  38% { margin-top: -90px; }
+  66% { margin-top: -90px; }
+  71% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+  0% { margin-top: -360px; }
+  5% { margin-top: -270px; }
+  25% { margin-top: -270px; }
+  30% { margin-top: -180px; }
+  50% { margin-top: -180px; }
+  55% { margin-top: -90px; }
+  75% { margin-top: -90px; }
+  80% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+
+  100% {
+    background-position: 500%;
+  }
+}

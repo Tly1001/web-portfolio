@@ -1,23 +1,102 @@
+
+
 .about-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
   min-height: 100vh;
+  position: relative;
+
+  .sub-head {
+    position: absolute;
+    top: 3.5em;
+}
 
   .about-container {
     height: fit-content;
     margin: auto;
+    width: 45%;
 
-    .interest {
-      border: 2px solid black;
-      border-radius: 5px;
-      padding: 10px;
-      margin: 1.5em;
 
+    .interest-container {
+      height: 80%;
+
+      .interest {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+        background-color: #231430;
+        border-radius: 10px;
+
+        p {
+          text-align: center;
+
+        }
+      }
     }
   }
 }
 
 .about-text {
-  line-height: 2em;
+  line-height: 1.5em;
+  font-size: 20px;
+}
+
+.add-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+
+  &.open {
+    background-color: initial;
+    border-radius: 5px;
+    width: 420px;
+    height: 20em;
+    padding: 18px 32px;
+    margin: 0 auto;
+    cursor: default;
+
+    .button-copy {
+      font-size: 2.5em;
+      line-height: 2em;
+    }
+
+    .interest {
+      font-size: 1.2em;
+      transition: opacity 0.4s ease-in;
+      transition-delay: 0.4s;
+      height: 100%;
+      margin: 0 auto;
+      opacity: 1;
+      left: 0;
+      position: absolute;
+    }
+  }
+
+  transition: all 0.3s ease-in;
+  background-color: #FFC145;
+  height: 144px;
+  width: 144px;
+  border-radius: 72px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .07);
+  cursor: pointer;
+
+  .button-copy {
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f7f7f7;
+    position: absolute;
+  }
+
+  .interest {
+    transition: none;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
 }

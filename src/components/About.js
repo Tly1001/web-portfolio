@@ -2,12 +2,17 @@ import React from 'react'
 
 
 function About() {
+  const [formOpen, setformOpen] = React.useState(false)
+
+  const handleForm = (event) => { 
+    setformOpen(event)
+  }
 
   return (
-    <section id="about" className="about-section">
-      <div className="container about-container">
+    <section id="about" className="about-section" onMouseEnter={() => handleForm('')}>
+      <div className="container about-container" onMouseEnter={() => handleForm('')}>
 
-        <h1>About</h1>
+        <h2 className="sub-head">About</h2>
 
         <p className="about-text">
           Kaizen (改善) is a concept that means continual improvement and change for the better. I follow this in all aspects of life. I have a constant drive to learn and develop myself, as well as those around me. 
@@ -24,34 +29,47 @@ function About() {
 
       <div className="about-container">
 
-        <div className="interest">
-          <p className="about-text">
-        Dungeons and Dragons:
-          I love imaginative worlds, role-playing, and preparing for challenges to come. The idea of tackling issues with an ‘out of the box’ mentality alongside friends in a  team with a mixed skillset is something I thoroughly enjoy. 
-          </p>
-        </div>
+        <h2>Interests</h2>
         
-        <div className="interest">
-          <p className="about-text">
-        Video games:
-          I have always had a curiosity towards how things work and the systems created for them. My particular favourite genre of games are strategy and rpgs where I can learn the mechanics and formulate a plan of action that yields the maximum output and efficiency. One game I always find myself going back to is Kingdom Crusaders 2, a game based on political choices set in the middle ages.
-          </p>
+
+        <div className="container interest-container" id="app">
+          <div className= {`add-product ${ formOpen === 'dd' ? 'open' : ''}`} onMouseEnter={() => handleForm('dd')}>
+            <div className="button-copy">
+              <span>Dungeons </span>
+              <span>& </span>
+              <span>dragons</span>
+            </div>
+            <div className="interest">
+              <p className="about-text">
+              I love imaginative worlds, role-playing, and preparing for challenges to come. The idea of tackling issues with an ‘out of the box’ mentality alongside friends in a  team with a mixed skillset is something I thoroughly enjoy. 
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="interest">
-          <p className="about-text">
-        Muay Thai:
-          Healthy body, healthy mind. Discipline and stress relief being my motivations of uptaking this martial art, I am inspired by the dedication shown in the members and also appreciate the environment that encourages mutual respect among my peers and teachers.
-          </p>
+        <div className="container interest-container" id="app">
+          <div className= {`add-product ${ formOpen === 'muay' ? 'open' : ''}`} onMouseEnter={() => handleForm('muay')}>
+            <div className="button-copy" >Muay Thai</div> 
+            <div className="interest">
+              <p className="about-text">
+              Healthy body, healthy mind! Discipline and stress relief being my motivations of uptaking this martial art, I am inspired by the dedication shown in the members and also appreciate the environment that encourages mutual respect among my peers and teachers.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="interest">
-          <p className="about-text">
-        Cooking:
-          One of my absolute favourite things to do. Growing up, my parents were always working so I quickly learned to love grabbing random items from the fridge and experimenting to see what I could create, eating tasty food was also an added bonus! 
-          I tend to try learning french cooking techniques and integrating them into chinese and viet dishes. Have you ever noticed that duck á l’orange was essentially a french duck in plum sauce?
-          </p>
+        <div className="container interest-container" id="app">
+          <div className= {`add-product ${ formOpen === 'cooking' ? 'open' : ''}`} onMouseEnter={() => handleForm('cooking')}>
+            <div className="button-copy">Cooking</div>
+            <div className="interest">
+              <p className="about-text">
+              One of my absolute favourite things to do. Growing up, my parents were always working so I quickly learned to love grabbing random items from the fridge and experimenting to see what I could create, eating tasty food was also an added bonus! 
+              I tend to try learning french cooking techniques and integrating them into chinese and viet dishes. Have you ever noticed that duck á l’orange was essentially a french duck in plum sauce?
+              </p>
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
   )

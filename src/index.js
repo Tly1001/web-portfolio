@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import './styles/main.scss'
+import './styles/scrollbar.scss'
+import './styles/home.scss'
 import './styles/navbar.scss'
 import './styles/about.scss'
 import './styles/skills.scss'

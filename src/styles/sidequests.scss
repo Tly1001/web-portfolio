@@ -1,53 +1,76 @@
-.project {
-  // display: relative;
+.side-quest-wrap {
   position: relative;
-  z-index: 0;
-  width: fit-content;
-  // overflow: hidden;
-  // font-size: 1rem;
+  padding: 2em;
+  width: 50%;
+  margin: 0 auto;
 
-  img {
-    top: 0;
-    left: 0;
-    height: 15rem;
-    width: 30rem;
+  h2 {
+    position: absolute;
+    top: -3em;
+    font-size: 2em;
   }
 
-  .project-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--bg-primary);
-    height: 15em;
-    width: 30em;
-    opacity: 0;
-    transition: linear .15s;
+  .project {
+    position: relative;
+    z-index: 0;
+    width: fit-content;
+    margin: 1em auto;
 
-    &:hover {
-      opacity: 0.9;
+    img, video {
+      top: 0;
+      left: 0;
+      height: 15em;
+      width: 30em;
+      border-radius: 10px;
+    }
+
+    .project-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: var(--bg-primary);
+      height: 15em;
+      width: 30em;
+      border-radius: 10px;
+      opacity: 0;
       transition: linear .15s;
-    }
 
-    p {
-      font-size: 3em;
-      color: var(--text-secondary);
-      margin: 0;
-    }
-    .description {
-      font-size: 1em;
-    }
-    .project-links {
-      margin: 1em 0;
-      .project-link {
-        margin: 1em;
-        cursor: pointer;
-        .icon {
-          height: 2em;
-          width: 2em;
+      &:hover {
+        opacity: 0.9;
+        transition: linear .15s;
+      }
+
+      p {
+        font-size: 3em;
+        color: var(--text-secondary);
+        margin: 0;
+      }
+
+      .description {
+        font-size: 1em;
+      }
+
+      .project-links {
+        margin: 1em 0;
+
+        .project-link {
+          margin: 1em;
+          cursor: pointer;
+
+          .icon {
+            height: 2em;
+            width: 2em;
+            padding: 1em;
+
+            &:hover {
+              
+              background-color: white;
+            }
+          }
         }
       }
     }
