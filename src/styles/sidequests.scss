@@ -16,7 +16,8 @@
     width: fit-content;
     margin: 1em auto;
 
-    img, video {
+    img,
+    video {
       top: 0;
       left: 0;
       height: 15em;
@@ -54,6 +55,15 @@
         font-size: 1em;
       }
 
+      div {
+        margin-top: 1.7em;
+        .icon {
+          height: 2.3em;
+          width: 2.3em;
+          margin: 0 10px;
+        }
+      }
+
       .project-links {
         margin: 1em 0;
 
@@ -67,7 +77,7 @@
             padding: 1em;
 
             &:hover {
-              
+
               background-color: white;
             }
           }

@@ -7,8 +7,8 @@ function Contact() {
   return (
     <>
       <section id="contact" className="section contact-section">
+          <h1 data-aos="fade-up">Contact</h1>
         <div className="container" data-aos="fade-up" style={{ opacity: 0.8 }}>
-          <h1>Contact</h1>
           <h2>Email: thomasly1001@gmail.com</h2>
           <div className="contact-links">
             <a className="contact-link" href="https://github.com/Tly1001">
