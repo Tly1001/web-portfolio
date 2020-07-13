@@ -2,27 +2,73 @@
   height: 80vh;
   position: relative;
 
-  h1 {
-    margin: 0;
-  }
-
-  h2 {
-    margin: 1em 0;
-    font-size: 28px;
-  }
-
-  .contact-links {
+  .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    .contact-link {
-      margin: 0 2em;
-      .icon {
-        // height: 2rem;
-        // width: 2rem;
-        border-radius: 5px;
+    flex-direction: column;
+    width: 80%;
+
+    h1 {
+      margin: 0;
+    }
+
+    .email-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+
+      .email {
+        height: 2rem;
+        width: 2rem;
+        // margin-top: auto;
+      }
+
+      p {
+        color: black;
+        font-size: 6em;
+        margin: 0;
+        margin-right: 20px;
+        font-weight: 700;
+
+      }
+
+      h2 {
+        margin: 32px 0;
+        font-size: 32px;
       }
     }
+
+
+    .link-wrap {
+      display: flex;
+      align-items: center;
+      margin: 0 0.5em;
+
+      .contact-link {
+        display: flex;
+        align-items: center;
+        margin-top: 2em;
+        display: flex;
+        text-decoration: none;
+
+        h2 {
+          margin: 32px 0;
+          font-size: 32px;
+        }
+
+        .icon {
+          height: 5.5em;
+          width: 5.5rem;
+          border-radius: 5px;
+          margin-right: 22px;
+          
+          
+        }
+      }
+    }
+        :last-child{
+          margin-bottom: 10px;
+        }
   }
 }
 
@@ -33,7 +79,8 @@ footer {
   height: 5vh;
   background-color: rgb(22, 21, 21);
   padding: 1em 2em;
-  margin-bottom: 2em;;
+  margin-bottom: 2em;
+  ;
   bottom: 0;
   border-radius: 40px;
 }

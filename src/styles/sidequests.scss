@@ -1,84 +1,94 @@
-.side-quest-wrap {
-  position: relative;
-  padding: 2em;
-  width: 50%;
-  margin: 0 auto;
+#side-quests {
+display: flex;
+flex-direction: column;
+width: 65%;
+margin: 0 auto;
+position: relative;
 
   h2 {
-    position: absolute;
-    top: -3em;
+    // position: absolute;
+    // top: -3em;
     font-size: 2em;
   }
 
-  .project {
+
+  .side-quest-wrap {
     position: relative;
-    z-index: 0;
-    width: fit-content;
-    margin: 1em auto;
+    padding: 2em;
+    // width: 50%;
 
-    img,
-    video {
-      top: 0;
-      left: 0;
-      height: 15em;
-      width: 30em;
-      border-radius: 10px;
-    }
 
-    .project-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: var(--bg-primary);
-      height: 15em;
-      width: 30em;
-      border-radius: 10px;
-      opacity: 0;
-      transition: linear .15s;
+    .project {
+      position: relative;
+      z-index: 0;
+      width: fit-content;
+      margin: 1em auto;
 
-      &:hover {
-        opacity: 0.9;
+      img,
+      video {
+        top: 0;
+        left: 0;
+        height: 15em;
+        width: 30em;
+        border-radius: 10px;
+      }
+
+      .project-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--bg-primary);
+        height: 15em;
+        width: 30em;
+        border-radius: 10px;
+        opacity: 0;
         transition: linear .15s;
-      }
 
-      p {
-        font-size: 3em;
-        color: var(--text-secondary);
-        margin: 0;
-      }
-
-      .description {
-        font-size: 1em;
-      }
-
-      div {
-        margin-top: 1.7em;
-        .icon {
-          height: 2.3em;
-          width: 2.3em;
-          margin: 0 10px;
+        &:hover {
+          opacity: 0.9;
+          transition: linear .15s;
         }
-      }
 
-      .project-links {
-        margin: 1em 0;
+        p {
+          font-size: 3em;
+          color: var(--text-secondary);
+          margin: 0;
+        }
 
-        .project-link {
-          margin: 1em;
-          cursor: pointer;
+        .description {
+          font-size: 1em;
+        }
+
+        div {
+          margin-top: 1.7em;
 
           .icon {
-            height: 2em;
-            width: 2em;
-            padding: 1em;
+            height: 2.3em;
+            width: 2.3em;
+            margin: 0 10px;
+          }
+        }
 
-            &:hover {
+        .project-links {
+          margin: 1em 0;
 
-              background-color: white;
+          .project-link {
+            margin: 1em;
+            cursor: pointer;
+
+            .icon {
+              height: 2em;
+              width: 2em;
+              padding: 1em;
+
+              &:hover {
+
+                background-color: white;
+              }
             }
           }
         }

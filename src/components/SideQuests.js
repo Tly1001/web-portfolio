@@ -8,11 +8,8 @@ function SideQuests() {
 
   return ( 
     <section id="side-quests" className="section" style={{ opacity: 0.8 }}>
+        <h2 data-aos="fade-up">Side quests</h2>
       <div className="container side-quest-wrap" data-aos="fade-up">
-        
-        <h2>Side quests</h2>
-        
-
         <div className="project">
           <video autoPlay loop muted playsInline src={require('../assets/tetris-play.mp4')}></video>
           {/* <img src="https://imgur.com/CNbrJei.jpeg" alt="Tetris"/> */}
