@@ -56,9 +56,9 @@ function SideQuests() {
               <a className="project-link" href="https://github.com/Tly1001/project-2" target="_blank" rel="noopener noreferrer">
                 <img className="icon" src={require('../assets/github-image.png')} alt="github"/>
               </a>
-              <a className="project-link" href="" target="_blank" rel="noopener noreferrer">
+              {/* <a className="project-link" href="" target="_blank" rel="noopener noreferrer">
                 <img className="icon" src={require('../assets/link.png')} alt="site-link"/>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
