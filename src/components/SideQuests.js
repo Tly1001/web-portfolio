@@ -22,11 +22,11 @@ function SideQuests() {
               <img className="icon" src={require('../assets/javascript.png')} alt="JavaScript"/>
             </div>
             <div className="project-links">
-              <a className="project-link" href="https://github.com/Tly1001/project-2" target="_blank" rel="noopener noreferrer">
+              <a className="project-link" href="https://github.com/Tly1001/sei-project-one" target="_blank" rel="noopener noreferrer">
                 <img className="icon" src={require('../assets/github-image.png')} alt="github"/>
               </a>
               {/* not deployed yet */}
-              {/* <a className="project-link" href="https://dinder-for-recipes.netlify.app/" target="_blank" rel="noopener noreferrer">
+              {/* <a className="project-link" href="https://tetrisproject.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <img className="icon" src={require('../assets/link.png')} alt="site-link"/>
               </a> */}
             </div>
@@ -68,12 +68,12 @@ function SideQuests() {
               <img className="icon" src={require('../assets/mongo.png')} alt="MongoDB"/>
             </div>
             <div className="project-links">
-              <a className="project-link" href="https://github.com/Tly1001/project-2" target="_blank" rel="noopener noreferrer">
+              <a className="project-link" href="https://github.com/Tly1001/sei-group-project-3" target="_blank" rel="noopener noreferrer">
                 <img className="icon" src={require('../assets/github-image.png')} alt="github"/>
               </a>
-              {/* <a className="project-link" href="" target="_blank" rel="noopener noreferrer">
+              <a className="project-link" href="http://spot-me-group.herokuapp.com/register" target="_blank" rel="noopener noreferrer">
                 <img className="icon" src={require('../assets/link.png')} alt="site-link"/>
-              </a> */}
+              </a>
             </div>
           </div>
         </div>

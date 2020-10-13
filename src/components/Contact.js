@@ -33,7 +33,9 @@ function Contact() {
         </div>
       </section>
 
-      <footer data-aos="fade-up">
+      <footer 
+      // data-aos="fade-up"
+      >
         <p>© 2020 Thomas Ly.</p>
       </footer>
 
