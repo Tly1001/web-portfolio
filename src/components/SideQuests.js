@@ -26,9 +26,9 @@ function SideQuests() {
                 <img className="icon" src={require('../assets/github-image.png')} alt="github"/>
               </a>
               {/* not deployed yet */}
-              {/* <a className="project-link" href="https://tetrisproject.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <a className="project-link" href="https://tetrisproject.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <img className="icon" src={require('../assets/link.png')} alt="site-link"/>
-              </a> */}
+              </a>
             </div>
           </div>
         </div>
