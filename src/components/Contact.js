@@ -12,7 +12,7 @@ function Contact() {
 
           <div className="email-wrap">
             <p>@</p>
-            <h2>thomasly1001@gmail.com</h2>
+            <h2>thomaslydev@gmail.com</h2>
           </div>
           
           
